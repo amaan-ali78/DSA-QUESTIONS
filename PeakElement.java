@@ -3,10 +3,16 @@ import java.util.Scanner;
 public class PeakElement {
   static int findPeak(int[] arr, int n) {
     if (n == 1)
-      return arr[0];
+     return 0;
+     if (arr[0]>arr[1]) {
+      return 0;
+     }
+    if (arr[n-1]>arr[n-2]) {
+      return n-1;
+    }
     for (int i = 1; i < n-1; i++) {
       if (arr[i - 1] < arr[i] && arr[i + 1] < arr[i])
-        return arr[i];
+        return i;
     }
     return -1;
   }
@@ -21,6 +27,6 @@ public class PeakElement {
     for (int i = 0; i < arr.length; i++) {
       arr[i] = sc.nextInt();
     }
-    System.out.println(findPeak(arr, n));
+    System.out.println(arr[findPeak(arr, n)]);
   }
 }
