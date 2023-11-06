@@ -14,7 +14,7 @@ public class PeakElement {
       if (arr[i - 1] < arr[i] && arr[i + 1] < arr[i])
         return i;
     }
-    return -1;
+    return 0;
   }
 
   public static void main(String[] args) {
