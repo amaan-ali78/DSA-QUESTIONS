@@ -33,7 +33,7 @@ public class Count012 {
         System.out.println("Enter the size of your Array : ");
         n = sc.nextInt();
         int[] arr = new int[n];
-        System.out.println("Enter the element in your Array");
+        System.out.print("Enter the element in your Array : ");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
