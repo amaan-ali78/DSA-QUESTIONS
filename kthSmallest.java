@@ -4,12 +4,13 @@ import java.util.Scanner;
 public class kthSmallest {
     static int small(int[]arr,int n,int k)
     {
+        //Sorting the array to find the kth smllest element
         Arrays.sort(arr);
         return arr[k-1];
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         int n,k;
         System.out.print("Enter the size of your Array : ");
         n = sc.nextInt();
