@@ -15,9 +15,9 @@ public static void main(String[] args)
         n = sc.nextInt();
         int[] arr = new int[n];
         System.out.print("Enter the element in your Array : ");
-        for (int i = 0; i < arr.length; i++) 
+        for (int i = 0;i < arr.length;i++) 
         {
-            arr[i] = sc.nextInt();
+            arr[i]=sc.nextInt();
         }
         System.out.print("Array after sorting : ");
         negSort(arr);
