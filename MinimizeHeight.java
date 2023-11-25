@@ -9,6 +9,7 @@ public class MinimizeHeight {
 		int k = 6;
 		int ans = getMinDiff(arr, arr.length, k);
 		System.out.println(ans);
+		
 	}
 
 	// User function Template for Java
