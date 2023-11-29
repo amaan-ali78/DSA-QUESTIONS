@@ -11,6 +11,7 @@ public class SmallestPositive {
                 arr[index - 1] *= -1;
         }
         for (int i = 0; i < arr.length; i++) {
+            
             if (arr[i] > 0)
                 return i + 1;
         }
